@@ -1,0 +1,28 @@
+.card{
+    width: 250px; /* fixed width */ 
+    display:inline-block;  /* position cards side by side */
+    vertical-align:top;  /* align cards to the top */
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 10px; /* spaces between cards */
+
+}
+
+/* Overlapping effect for the second card */
+.card:nth-child(2) {
+    margin-left: -30px; /* Negative margin to create overlap */
+    background-color: #f7f4f4; /* Different background for visual distinction */
+    border: 2px solid #000000; /* Different border for visual distinction */
+    padding: 15px; /* Different padding for visual distinction */
+  }
+
+  /* Heading and paragraph styling */
+  h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+   }
+   p {
+    font-size: 1em;
+    line-height: 1.5;
+   }
