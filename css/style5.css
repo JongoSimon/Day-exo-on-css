@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    /* Gallery container styling */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Space between boxes */
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+  
+      /* Box styling */
+      .box {
+        width: calc(33.33% - 10px); /* 3 boxes per row with gap */
+        height: 150px; /* Fixed height */
+        background-color: #ccc;
+        border: 1px solid #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        color: #333;
+      }
+  
+      /* Optional: Add hover effect */
+      .box:hover {
+        background-color: #bbb;
+        cursor: pointer;
+      }
+      /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .box {
+          width: calc(50% - 10px); /* 2 boxes per row on smaller screens */
+        }
+      }
+  
+      /* Media query for even smaller screens */
+      @media (max-width: 480px) {
+        .box {
+          width: 100%; /* 1 box per row on very small screens */
+        }
+      }
